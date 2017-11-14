@@ -3,15 +3,15 @@ import carController from '../controllers/cars.controller'
 
 const router = express.Router()
 
-router.get('/allcars', (req, res) => {
+router.get('/all', (req, res) => {
   carController.getAll(req, res)
 })
 
-router.post('/addcar', (req, res) => {
+router.post('/add', (req, res) => {
   carController.addCar(req, res)
 })
 
-router.delete('/deletecar', (req, res) => {
+router.delete('/delete', (req, res) => {
   carController.deleteCar(req, res)
 })
 
